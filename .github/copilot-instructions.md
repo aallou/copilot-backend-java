@@ -125,3 +125,6 @@ mvn -q -DskipTests package
 # Lancer l'application (dev)
 mvn spring-boot:run
 ```
+
+## Instructions
+Utilise les instructions de test unitaire dans `.github/instructions/unit-test.instructions.md` pour générer des tests unitaires conformes aux bonnes pratiques Java 21 et Spring Boot.

@@ -26,9 +26,9 @@ public class HelloControllerTest {
 
     @Test
     void helloEndpointReturnsGreeting() throws Exception {
-        BDDMockito.given(helloService.getHello()).willReturn(new HelloDto("Hello, world!"));
+        BDDMockito.given(helloService.getHello("world")).willReturn(new HelloDto("Hello, world!"));
 
-        this.mockMvc.perform(get("/hello").accept(MediaType.APPLICATION_JSON))
+        this.mockMvc.perform(get("/hello").param("name", "world").accept(MediaType.APPLICATION_JSON))
             .andExpect(status().isOk())
             .andExpect(content().json("{\"message\":\"Hello, world!\"}"));
     }

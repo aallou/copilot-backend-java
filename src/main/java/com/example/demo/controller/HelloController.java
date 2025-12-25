@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.dto.HelloDto;
 import com.example.demo.service.HelloService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -13,8 +14,9 @@ public class HelloController {
         this.helloService = helloService;
     }
 
+    //add a param name to the endpoint
     @GetMapping("/hello")
-    public HelloDto hello() {
-        return helloService.getHello();
+    public HelloDto hello(@RequestParam("name") String name) {
+        return helloService.getHello(name);
     }
 }
