@@ -1,0 +1,7 @@
+/.mvn
+/target
+/redis_data
+/postgres_data
+/mongo_data
+.idea
+.vscode
