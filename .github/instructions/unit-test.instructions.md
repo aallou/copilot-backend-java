@@ -45,3 +45,5 @@ You are generating UNIT TESTS only.
 - Correct package
 - Imports included
 - No TODO / placeholder
+- Complete test file with >95% coverage
+- Validation of coverage completeness

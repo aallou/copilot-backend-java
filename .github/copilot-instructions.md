@@ -126,5 +126,13 @@ mvn -q -DskipTests package
 mvn spring-boot:run
 ```
 
-## Instructions
-Utilise les instructions de test unitaire dans `.github/instructions/unit-test.instructions.md` pour générer des tests unitaires conformes aux bonnes pratiques Java 21 et Spring Boot.
+## Intent-based instruction loading
+
+### Unit tests
+When the user intent is related to unit testing (examples:
+"generate TU", "generate unit tests", "write tests", "add tests"),
+you MUST strictly follow the instructions defined in:
+
+.github/instructions/unit-test.instructions.md
+
+These instructions override any default behavior for test generation.
